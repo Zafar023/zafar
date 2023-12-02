@@ -1,0 +1,41 @@
+body {
+   
+}
+.sld {
+}
+.container {
+    width: 1500px;
+    
+}
+.slider {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    
+}
+.slide {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.sli {
+   padding: 50px;
+    width: 360px;
+    height: 240px;
+    background-image: url(./img/anime3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    
+}
+.slider-multiple {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    
+}
+.slider-one {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: left;
+}
