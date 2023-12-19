@@ -1,0 +1,52 @@
+.qq {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    transition: all 1s;
+}
+/* Эфект при наведении - hover  */
+.qq:hover {
+    background-color: red;
+}
+
+.btn {
+transition: all 1s;
+}
+/*Эфект при зажатии(клике) - active*/
+.btn:active {
+    background-color:aqua;
+    font-size: 50px;
+}
+
+
+.btn-2{
+    transition: all 1s;
+}
+/* Эфект при focus - фокус */
+.btn-2:focus {
+border: 3px solid green;
+}
+
+.link {
+    transition: all 1s;
+}
+/* Эфект при посешении - visited */
+.link:visited {
+    color: green;
+}
+
+li {
+    transition: all 1s;
+}
+/*first-child - первый дочерний элемент  */
+li:first-child {
+    color: red;
+}
+/*last-child - последний дочерний элемент */
+li:last-child {
+    color: blue;
+}
+/* берет нечетный элемент - odd */
+li:nth-child(odd) {
+    background-color: yellow;
+}
