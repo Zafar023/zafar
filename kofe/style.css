@@ -1,0 +1,482 @@
+body {
+    background: #EEEFF1;
+    font-family: 'Jost', sans-serif;
+
+}
+.header {
+}
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 24px 100px;
+}
+.logo {
+}
+.link {
+    color: #1B1B1D;
+    font-family: Jost;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    text-decoration: none;
+}
+.link:hover {
+border-bottom:1px solid #1B1B1D;
+}
+.elips {
+
+    width: 56px;
+    height: 56px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    
+}
+.elips__korzina {
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.korzina {
+}
+.btn {
+    color: #FFF;
+    font-family: Jost;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px; /* 173.333% */
+    text-transform: uppercase;
+
+    display: flex;
+    padding: 15px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 63px;
+    background: #1B1B1D;
+    box-shadow: 0px 30px 60px 0px rgba(163, 168, 178, 0.15);
+}
+.wraper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 138px 64px;
+}
+.card{
+    
+}
+h1 {
+    
+    color: #1B1B1D;
+    font-family: Jost;
+    font-size: 124px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 140px; /* 112.903% */
+}
+h1::after {
+    content: '';
+    display: inline-block;
+    width: 73px;
+    height: 58px;
+    background-image: url(image\ 3\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.text {
+    color: #64646A;
+    font-family: Jost;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    margin-top: 30px;
+}
+.knopka {
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+    gap: 30px;
+}
+.knopka .btn {
+    padding: 20px 40px;
+}
+.box {
+    margin-top: -50px;
+}
+h3 {
+    color: #1B1B1D;
+    font-family: Jost;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+h2 {
+    
+
+    color: #1B1B1D;
+    text-align: center;
+    font-family: Jost;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 70px; /* 109.375% */
+}
+.kards {
+    display: flex;
+    gap: 30px;
+    
+}
+.zagi {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.kard {
+    background:  white;
+    padding: 20px;
+    border-radius: 24px;
+}
+
+.btn {
+}
+.food {
+   text-align: center;
+   margin-top: 50px;
+}
+.kard .btn {
+    margin: 50px auto;
+}
+.favorit {
+    display: flex;
+    margin-left: -100px;
+    margin-top: 100px;
+   
+}
+.favorit  h2 {
+    font-family: Jost;
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 70px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+    
+    
+}
+.favorit .card {
+    width: 512px;
+    height: 140px;
+}
+.card__text {
+    font-family: Jost;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+.card .btn {
+    padding: 20px 40px;
+}
+
+.mone {
+        
+}
+
+
+.best {
+   display: flex;
+   
+}
+.forms .text {
+    color: #64646A;
+    font-family: Jost;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 140% */
+
+    margin: 50px 20px;
+}
+.best .card {
+    width: 370px;
+    height: 530px;
+    margin: 0 15px;
+    background: #FFFFFF;
+    
+    border-radius: 24px;
+   
+}
+.name {
+   display: flex;
+   text-align: left;
+}
+.selling {
+    margin-top: -50px;
+}
+.seling {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.name__form .text {
+    color: #64646A;
+    font-family: Jost;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; /* 140% */
+
+    
+}
+.name__form h2 {
+    color: #1B1B1D;
+    font-family: Jost;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 44px; /* 110% */
+
+    text-align: left;
+}
+.sel {
+    display: flex;
+    gap: 51px;
+    margin: 0 20px;
+    
+    
+}
+.sel .btn {
+    padding: 15px 30px;
+}
+
+
+
+.instant {
+    display: flex;
+    
+    align-items: center;
+    margin: 0 -8px;
+    margin-top: 100px;
+}
+
+.wraper-2 {
+    display: inline-flex;
+}
+.cad {
+    width: 468px;
+    height: 644px;
+    background: #FFFFFF;
+    border-radius: 16px;
+    
+   
+}
+.cad-2 {
+    width: 468px;
+    height: 644px;
+    background: #FFFFFF;
+    border-radius: 16px;
+
+    margin-left: -282px;
+    margin-right: 10px;
+}
+.custumer {
+    border-radius: 16px;
+}
+.custumer-2 {
+    margin-left: 185px;
+    border-radius: 16px;
+}
+.star {
+    display: flex;
+    gap: 90px;
+    padding: 30px;
+    
+}
+.names  {
+    color: var(--Accent, #1B1B1D);
+    font-family: Jost;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px; /* 125% */
+}
+.molit {
+    color: var(--Accent, #1B1B1D);
+    font-family: Jost;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 150% */
+
+    padding: 30px;
+}
+.what {
+    margin-left: 70px;
+}
+.what h2 {
+    text-align: left;
+}
+.sar {
+    display: flex;
+    gap: 24px;
+    margin-top: 72px;
+}
+.based {
+    
+    color: var(--Body-text, #64646A);
+    font-family: Jost;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 140% */
+    margin-top: 8px;
+}
+
+
+input {
+    width: 327px;
+    padding: 20px 30px;
+    border-radius: 65px;
+    border: 1px solid white;
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.rigt {
+    display: flex;
+    margin-top: 20px;
+}
+.rigt img {
+    width: 30px;
+    height: 30px;
+}
+.rigt h3 {
+    font-size: 18px;
+    
+}
+
+.wraper-3 {
+    padding-top: 100px;
+}
+.deliseos {
+    
+}
+.lowis {
+    width: 558px;
+    height: 322px;
+    display: flex;
+
+    
+    
+}
+.lowis p {
+    margin-top: 10px;
+}
+.elipso {
+    padding: 15px;
+    background: white;
+    border-radius: 50%;
+}
+.telefon .text {
+ 
+ margin-left: 24px;
+}
+.lowis h2 {
+    color: #1B1B1D;
+    font-family: Jost;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 50px; /* 125% */
+    text-align: left;
+    margin: 40px 0;
+}
+.contackt {
+    margin-right: -759px;
+    margin-left: 358px ;
+}
+.pochta {
+    display: flex;
+    gap: 20px;
+    
+}
+
+.telefon {
+    display: flex;
+    margin: 30px 0;
+}
+.seti {
+    display: flex;
+    gap: 20px;
+    
+}
+.location {
+    
+}
+
+.pole {
+}
+.zagol2 {
+}
+.btn {
+}
+.big {
+    width: 307px;
+    height: 122px;
+}
+.colon {
+    
+}
+.bag {
+    margin-top: 150px;
+}
+.colon .top {
+    margin-top: 40px;
+}
+.copit {
+    display: flex;
+    justify-content: space-between;
+}
+span {
+    color: var(--Accent, #1B1B1D);
+    font-family: Jost;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.wraper-4 {
+    
+    
+    margin: 0 auto;
+    padding-top: 500px;
+
+
+}
+.polis {
+    display: flex;
+}
+ .text {
+ margin-top: 0;
+}
+.palk {
+
+}
