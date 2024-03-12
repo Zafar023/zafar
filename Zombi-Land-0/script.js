@@ -1,0 +1,21 @@
+const btn = document.querySelector(".btn-pod");
+const box = document.querySelector(".box-pod");
+
+btn.addEventListener("click", () => {
+  box.classList.toggle("active");
+});
+
+
+const burger = document.querySelector('.burger')
+        const menu = document.querySelector('.menu')
+
+        burger.addEventListener('click' ,() => {
+            menu.classList.toggle('open')
+        })
+
+        $('.autoplay').slick({
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 2000,
+        });
