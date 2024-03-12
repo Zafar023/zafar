@@ -3,32 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Zombi-Earth</title>
+    <title>Zombi-Land</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /> -->
+
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <nav class="nav">
+    <nav class="nav" data-aos="fade-down"
+    data-aos-easing="linear"
+    data-aos-duration="1500">
       <div class="container">
         <div class="wraper">
-          <a class="link" href="./index.html">На Главную</a>
-          <a class="link" href="./news.html">Зомби Новости</a>
-          <a class="link" href="./menu.html">Зомби Меню</a>
-          <a class="link" href="./inform.html">ЛИГБЕС Против Зомби</a>
-          <a class="link" href="./bookmark.html">Зомби Закладка</a>
-          <div class="users">
-            <button class="btn">
-              <img class="user" src="./smile.jpg" alt="нет интернета" />Войти
-            </button>
+          <div class="menu">
+            <a class="link" href="./index.html">На Главную</a>
+            <a class="link" href="./news.html">Зомби Новости</a>
+            <a class="link" href="./menu.html">Зомби Меню</a>
+            <a class="link" href="./inform.html">ЛИГБЕС Против Зомби</a>
+            <a class="link" href="./bookmark.html">Зомби Закладка</a>
+            <button class="btn btn-pod">Доп Настройки</button>
+            <div class="users">
+              <img class="user" src="./smile.jpg" alt="нет интернета" />
+              <a href="./registr.html" class="registr link">Войти</a>
+            </div>
           </div>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1024px-Hamburger_icon.svg.png"
+            alt=""
+            class="burger"
+          />
         </div>
       </div>
     </nav>
+
+    <div class="box box-pod">
+      <a href="./noreclam.html" class="link">Убрать рекламу</a>
+      <a href="./contacts.html" class="link">Контакты</a>
+      <a href="./sotceti.html" class="link">Соцсети</a>
+      <a href="./langude.html" class="link">Поменять язык</a>
+      <a href="./help.html" class="link">Подержка</a>
+    </div>
 
     <section class="inform">
       <div class="container">
         <div class="wraper">
           <div class="information">
-            <div class="card">
+            <div class="card" data-aos="flip-up">
               <img
                 class="inf"
                 src="https://d1joui61864gj3.cloudfront.net/2180095/md_nvdkse_7bccaa44be18a5b7b44cce5bb034d677d82cabc8.jpg"
@@ -54,38 +79,51 @@
     </section>
 
     <section class="inform">
-        <div class="container">
-          <div class="wraper">
-            <div class="information">
-              <div class="card">
-                <img
-                  class="inf"
-                  src="https://d1joui61864gj3.cloudfront.net/2097198/md_lfqxam_0268705dbe381d2f79c06e65f496665ef574bac6.jpg"
-                  alt="нет интернета"
-                />
-                <h2>zombie football player</h2>
-                <h3>Из игры Plants versus Zombies</h3>
-                <p class="text">описание</p>
-                <p class="text">
-                  Они имеют серый или тёмно-болотный цвета кожи, также в
-                  большинстве случаев носят порванную и повреждённую одежду с
-                  различными аксессуарами и предметы. При повреждении их
-                  растениями и грибами носимые зомби предметы повреждаются и
-                  падают с них, как и некоторые части их плоти, как часть руки и
-                  голова, после потери последнего они погибают, однако есть
-                  случаи, когда они продолжают благополучно функционировать без
-                  неё
-                    <br>
-                  Имеет высокую прочность и скорость
-                </p>
-              </div>
+      <div class="container">
+        <div class="wraper">
+          <div class="information">
+            <div class="card" data-aos="flip-down">
+              <img
+                class="inf"
+                src="https://d1joui61864gj3.cloudfront.net/2097198/md_lfqxam_0268705dbe381d2f79c06e65f496665ef574bac6.jpg"
+                alt="нет интернета"
+              />
+              <h2>zombie football player</h2>
+              <h3>Из игры Plants versus Zombies</h3>
+              <p class="text">описание</p>
+              <p class="text">
+                Они имеют серый или тёмно-болотный цвета кожи, также в
+                большинстве случаев носят порванную и повреждённую одежду с
+                различными аксессуарами и предметы. При повреждении их
+                растениями и грибами носимые зомби предметы повреждаются и
+                падают с них, как и некоторые части их плоти, как часть руки и
+                голова, после потери последнего они погибают, однако есть
+                случаи, когда они продолжают благополучно функционировать без
+                неё
+                <br />
+                Имеет высокую прочность и скорость
+              </p>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-    
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
 
-    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="/script.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

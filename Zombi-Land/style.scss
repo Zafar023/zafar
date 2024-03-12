@@ -8,6 +8,35 @@ body {
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
+  transition: all 0.3s;
+}
+.slick-arrow {
+  background-color: blueviolet;
+  color: yellow;
+  border-radius: 5px;
+  padding: 10px;
+  transition: all 0.3s;
+  &:hover {
+    background-color: rgb(150, 75, 219);
+    color: rgb(235, 20, 20);
+  }
+  &:active {
+    background-color: rgb(113, 40, 182);
+    color: red;
+  }
+}
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+body.red {
+  background-image: url(https://img.lexica.art/fdcbadc9-709f-4b1f-a437-b70ce175bca5_full.webp);
+}
+body.blue {
+  background-image: url(https://masterpiecer-images.s3.yandex.net/2f09d2e683cf11eea70fbadf81d486ab:upscaled);
 }
 
 .nav {
@@ -19,16 +48,60 @@ body {
     .wraper {
       background-color: white;
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
       background-color: blueviolet;
       padding-left: 10px;
       padding-right: 10px;
-      @media (max-width: 700px) {
+      @media (max-width: 800px) {
         flex-direction: column;
         text-align: center;
-        padding-top: 60px;
-    }
+        padding: 20px;
+      }
+      .menu {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        transition: all 0.3s;
+        @media (max-width: 800px) {
+          width: 100%;
+          max-width: 100%;
+          height: 100vh;
+          background-color: gray;
+
+          background: rgba(255, 255, 255, 0.25);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          backdrop-filter: blur(4px);
+          -webkit-backdrop-filter: blur(4px);
+          border-radius: 10px;
+          border: 1px solid rgba(255, 255, 255, 0.18);
+
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          transition: all 0.5s;
+
+          position: fixed;
+          top: -100%;
+          left: 0;
+        }
+      }
+      .burger {
+        width: 50px;
+        display: none;
+        position: relative;
+        z-index: 3;
+
+        @media (max-width: 800px) {
+          display: block;
+        }
+      }
+
+      .open {
+        top: 0;
+      }
       .link {
         text-decoration: none;
         color: yellow;
@@ -40,6 +113,13 @@ body {
         }
       }
       .users {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        padding: 15px;
+        .registr {
+        }
       }
       .user {
         width: 25px;
@@ -77,6 +157,7 @@ body {
 
 .nevs {
   padding-top: 100px;
+
   .container {
     max-width: 1340px;
     width: 100%;
@@ -92,11 +173,11 @@ body {
     padding: 10px;
 
     gap: 50px;
-    @media (max-width: 700px) {
+    @media (max-width: 800px) {
       flex-direction: column;
       text-align: center;
       padding-top: 60px;
-  }
+    }
   }
   .info {
     display: flex;
@@ -106,12 +187,19 @@ body {
     border: 1px solid white;
     gap: 10px;
     padding: 10px;
+    margin: 10px;
     color: yellow;
     background-color: blueviolet;
     transition: all 0.3s;
     &:hover {
       color: red;
       background-color: rgb(28, 27, 27);
+    }
+    @media (max-width: 800px) {
+      flex-direction: column;
+      text-align: center;
+      padding-top: 60px;
+      width: 200px;
     }
   }
   // .nevs__zag
@@ -120,13 +208,11 @@ body {
     @media (max-width: 900px) {
       line-height: 100%;
       font-size: 40px;
-  }
+    }
 
-
-
-  @media (max-width: 400px) {
+    @media (max-width: 400px) {
       font-size: 35px;
-  }
+    }
   }
 
   // . nevs__link
@@ -144,9 +230,9 @@ body {
   // .nevs__text
 
   &__text {
-    @media (max-width: 700px) {
+    @media (max-width: 800px) {
       margin: 0 auto;
-  }
+    }
   }
 
   // .nevs__box
@@ -159,6 +245,10 @@ body {
   &__musiq {
     width: 150px;
     border: 1px solid white;
+
+    @media (max-width: 800px) {
+      width: 75px;
+    }
   }
 }
 
@@ -177,26 +267,10 @@ body {
       padding: 10px;
 
       gap: 50px;
-      @media (max-width: 700px) {
+      @media (max-width: 800px) {
         flex-direction: column;
         text-align: center;
-        padding-top: 60px;
-    }
-      .link__red {
-        color: white;
-        text-decoration: none;
-        &:hover {
-          color: red;
-          text-decoration: underline;
-        }
-      }
-      .link__blue {
-        color: white;
-        text-decoration: none;
-        &:hover {
-          color: blue;
-          text-decoration: underline;
-        }
+        padding: 20px;
       }
     }
   }
@@ -217,11 +291,11 @@ body {
       padding: 10px;
 
       gap: 50px;
-      @media (max-width: 700px) {
+      @media (max-width: 800px) {
         flex-direction: column;
         text-align: center;
         padding-top: 60px;
-    }
+      }
       .information {
         .card {
           display: flex;
@@ -242,9 +316,9 @@ body {
             width: 150px;
           }
           .text {
-            @media (max-width: 700px) {
+            @media (max-width: 800px) {
               margin: 0 auto;
-          }
+            }
           }
         }
       }
@@ -253,9 +327,6 @@ body {
 }
 
 .layout {
-  width: 1366px;
-  height: 768px;
-
   padding-top: 100px;
   margin: 0 auto;
   display: grid;
@@ -273,28 +344,33 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (max-width: 800px) {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 60px;
+  }
   .dok {
     color: yellow;
     transition: all 0.3s;
     cursor: pointer;
     h1 {
+      padding: 50px;
       font-size: 50px;
       @media (max-width: 900px) {
         line-height: 100%;
         font-size: 40px;
-    }
+      }
 
-
-
-    @media (max-width: 400px) {
+      @media (max-width: 400px) {
         font-size: 30px;
-    }
+      }
     }
     p {
+      padding: 50px;
       font-size: 25px;
-      @media (max-width: 700px) {
+      @media (max-width: 800px) {
         margin: 0 auto;
-    }
+      }
     }
     :hover {
       color: red;
@@ -310,7 +386,7 @@ body {
   grid-area: body;
   background-color: rgb(100, 13, 182);
   text-align: center;
-  padding-top: 100px;
+  padding: 50px;
   color: yellow;
   transition: all 0.3s;
 
@@ -343,16 +419,27 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+  gap: 50px;
+  margin-top: 50px;
+  @media (max-width: 800px) {
+    flex-direction: column;
+    text-align: center;
+    gap: 50px;
+  }
   img {
     width: 50px;
   }
   a {
     color: yellow;
     text-decoration: none;
-    
   }
-  
+  .sotseti {
+    display: flex;
+
+    flex-direction: column;
+    padding: 10px;
+    gap: 20px;
+  }
 }
 .rek {
   width: 250px;
@@ -381,11 +468,11 @@ body {
       transition: all 0.3s;
       color: white;
 
-      @media (max-width: 700px) {
+      @media (max-width: 800px) {
         flex-direction: column;
         text-align: center;
         padding-top: 60px;
-    }
+      }
       h1 {
         font-size: 35px;
         :hover {
@@ -395,13 +482,11 @@ body {
         @media (max-width: 900px) {
           line-height: 100%;
           font-size: 28px;
-      }
+        }
 
-
-
-      @media (max-width: 400px) {
+        @media (max-width: 400px) {
           font-size: 25px;
-      }
+        }
       }
       p {
         font-size: 25px;
@@ -412,12 +497,162 @@ body {
         @media (max-width: 700px) {
           margin: 0 auto;
           font-size: 16px;
-      }
+        }
       }
       img {
         width: 250px;
         height: 250px;
       }
+    }
+  }
+}
+
+.box {
+  width: 200px;
+  height: 100vh;
+  background-color: gray;
+  transition: all 0.3s;
+
+  padding: 10px;
+
+  position: fixed;
+  top: 0;
+  right: -100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: 700px) {
+    width: 100px;
+    text-align: center;
+  }
+
+  a {
+    color: black;
+    text-decoration: none;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.active {
+  /* width: 100%; */
+  /* border-radius: 50%; */
+  /* margin-left: auto; */
+  /* top: 0; */
+  right: 0px;
+}
+
+form {
+  margin: 0 auto;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  margin-top: 50px;
+  background-color: red;
+  color: yellow;
+  @media (max-width: 700px) {
+    width: auto;
+  }
+  p {
+    color: yellow;
+  }
+  input {
+    color: black;
+    padding: 15px;
+    background-color: yellow;
+  }
+  button {
+    color: black;
+    padding: 15px;
+    background-color: yellow;
+  }
+  select {
+    color: black;
+    padding: 15px;
+    background-color: yellow;
+  }
+  textarea {
+    color: black;
+    padding: 15px;
+    background-color: yellow;
+  }
+}
+.wraper__zol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: 800px) {
+    flex-direction: row;
+    text-align: center;
+  }
+  .red {
+    color: yellow;
+    background-color: blueviolet;
+    transition: all 0.3s;
+    padding: 10px;
+    &:hover {
+      color: red;
+      background-color: black;
+    }
+  }
+  .blue {
+    color: yellow;
+    background-color: blueviolet;
+    transition: all 0.3s;
+    padding: 10px;
+
+    &:hover {
+      color: red;
+      background-color: black;
+    }
+  }
+}
+.zol {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding-top: 0;
+  padding: 10px;
+}
+
+.num {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 25px;
+  color: yellow;
+  background-color: blueviolet;
+  margin: 50px 0;
+  text-align: center;
+
+  h1 {
+    transition: all 0.3s;
+    &:hover {
+      color: red;
+      text-decoration: none;
+    }
+  }
+  h2 {
+    transition: all 0.3s;
+    &:hover {
+      color: red;
+      text-decoration: none;
     }
   }
 }
