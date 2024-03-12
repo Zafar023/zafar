@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zombi-Land</title>
+
+    
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container">
+        <div class="wraper">
+          <div class="menu">
+            <a class="link" href="./index.html">На Главную</a>
+            <a class="link" href="./news.html">Зомби Новости</a>
+            <a class="link" href="./menu.html">Зомби Меню</a>
+            <a class="link" href="./inform.html">ЛИГБЕС Против Зомби</a>
+            <a class="link" href="./bookmark.html">Зомби Закладка</a>
+            <button class="btn btn-pod">Доп Настройки</button>
+            <div class="users">
+              <img class="user" src="./smile.jpg" alt="нет интернета" />
+              <a href="./registr.html" class="registr link">Войти</a>
+            </div>
+          </div>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1024px-Hamburger_icon.svg.png"
+            alt=""
+            class="burger"
+          />
+        </div>
+      </div>
+    </nav>
+
+    <section class="layout">
+      <div
+        class="header"
+        
+      >
+        <div class="dok">
+          <a class="link" href=""
+            ><img class="logo" src="./logo.jpg" alt="нет интернета"
+          /></a>
+        </div>
+        <div class="dok">
+          <h1>Добро пожаловать в Зомбилэнд</h1>
+          <p>Здесь вы получите знания о зомби.</p>
+        </div>
+      </div>
+      <!-- <div class="leftSide">
+        <img src="ZombiPari.jpg" alt="нет интернета" class="rek" />
+      </div> -->
+      <div class="body">
+        <div
+          class="mozg"
+          
+        >
+          <a
+            class="lino"
+            target="_blank"
+            href="https://www.mirf.ru/kino/dzhordzh-romero-zombi/"
+            >Джордж Ромеро: человек, который придумал зомби</a
+          >
+          <a class="lino" href="inform.html">
+            Зомби — оживший мертвец, потерявший контроль над собой и своим
+            телом, либо подчиняющийся чьим-то приказам.
+          </a>
+          <a class="lino" href="inform.html">
+            В фантастике зомби — это поражённые некой инфекцией (например,
+            вирусом) живые люди (иногда животные), полностью потерявшие контроль
+            над собой, и стремящиеся нападать и убивать других живых людей/живых
+            существ, иногда пожирать трупы, при этом инфекция может передаваться
+            через укусы.
+          </a>
+        </div>
+      </div>
+
+      <div class="box box-pod">
+        <a href="./noreclam.html" class="link">Убрать рекламу</a>
+        <a href="./contacts.html" class="link">Контакты</a>
+        <a href="./sotceti.html" class="link">Соцсети</a>
+        <a href="./langude.html" class="link">Поменять язык</a>
+        <a href="./help.html" class="link">Подержка</a>
+      </div>
+
+      <div class="footer" >
+        <a class="link" href=""
+          ><img class="logo" src="./logo.jpg" alt="нет интернета"
+        /></a>
+        <a class="link" href="dad.html">Создатель Сайта</a>
+        <div class="sotseti">
+          <a
+            href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwiFoMzjp8iEAxXmCQYAHYJxADcYABAAGgJ3cw&ase=2&gclid=Cj0KCQiA5-uuBhDzARIsAAa21T-jJr0yNEyt3i0eSBpBMmRmte1I7cUszgoxmqKXmR7A6T9b29GqmEwaAhG6EALw_wcB&ohost=www.google.com&cid=CAESVuD2ZqOU46hLCwPCfz2wVGd0Jqp-Z86jsH3F--xqGcdc6iiD-l0d4xqXnoeblg3B1p1AEBU0LsP8NZeRZ_Ycsl7mz0z590L4ZrDspjSIe5MB0x5nJirY&sig=AOD64_1ou5nXduoDK-OEBtT2Jlc05sQQ7g&q&nis=4&adurl&ved=2ahUKEwi90cbjp8iEAxVXVfEDHfTGBfIQ0Qx6BAgFEAE"
+            >facebook</a
+          >
+          <a href="https://www.instagram.com/">instagram</a>
+          <a href="https://twitter.com/?lang=ru">twitter</a>
+          <a href="https://m.vk.com/">vk</a>
+        </div>
+      </div>
+    </section>
+    
+    <script>
+        const btn = document.querySelector(".btn-pod");
+        const box = document.querySelector(".box-pod");
+
+  btn.addEventListener("click", () => {
+  box.classList.toggle("active");
+});
+
+  const burger = document.querySelector(".burger");
+  const menu = document.querySelector(".menu");
+
+  burger.addEventListener("click", () => {
+  menu.classList.toggle("open");
+});
+    </script>
+    
+  </body>
+</html>
