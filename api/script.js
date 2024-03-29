@@ -1,4 +1,5 @@
 const wraper = document.querySelector(".wraper");
+const loader = document.querySelector(".loader");
 
 const fanc = async () => {
   const response = await fetch("https://dummyjson.com/users");
@@ -21,3 +22,9 @@ const fanc = async () => {
   })
 };
 fanc();
+
+
+
+setTimeout(() => {
+  loader.remove()
+}, 2000);
